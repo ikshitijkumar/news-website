@@ -6,21 +6,16 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-text-color: #183b56;
-    --secondary-text-color: #577592;
-    --accent-color: #2294ed;
-    --accent-color-dark: #1d69a3;
-}
 
 body {
     font-family: "Poppins", sans-serif;
-    color: var(--primary-text-color);
+    color: #183b56;
+    background-color: rgb(239, 251, 255);
 }
 
 p {
     font-family: "Roboto", sans-serif;
-    color: var(--secondary-text-color);
+    color: #577592;
     line-height: 1.4rem;
 }
 
@@ -41,7 +36,6 @@ ul {
     max-width: 1180px;
     margin-inline: auto;
     overflow: hidden;
-    background-color: black;
 }
 
 nav {
@@ -56,16 +50,16 @@ nav {
 
 .main-nav {
     justify-content: space-between;
-    padding-block: 8px;
 }
 
 .company-logo img {
     width: 70px;
-    height: 50px;
+    height: 70px;
+    background-color: transparent;
 }
 
 .nav-links ul {
-    gap: 16px;
+    gap: 90px;
 }
 
 .hover-link {
@@ -73,7 +67,7 @@ nav {
 }
 
 .hover-link:hover {
-    color: var(--secondary-text-color);
+    color: #577592;
 }
 
 .hover-link:active {
@@ -81,7 +75,7 @@ nav {
 }
 
 .nav-item.active {
-    color: var(--accent-color);
+    color: #2294ed;
 }
 
 .search-bar {
@@ -99,8 +93,8 @@ nav {
 }
 
 .search-button {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: #22ed4e;
+    color: black;
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
@@ -109,7 +103,7 @@ nav {
 }
 
 .search-button:hover {
-    background-color: var(--accent-color-dark);
+    background-color: #2cf80d;
 }
 
 main {
@@ -126,19 +120,18 @@ main {
 
 .card {
     width: 360px;
-    min-height: 400px;
+    min-height: 450px;
     box-shadow: 0 0 4px #d4ecff;
+    border: 1px solid #000;
     border-radius: 4px;
     cursor: pointer;
     background-color: #fff;
     overflow: hidden;
-    transition: all 0.3s ease;
 }
 
 .card:hover {
     box-shadow: 1px 1px 8px #d4ecff;
     background-color: #f9fdff;
-    transform: translateY(-2px);
 }
 
 .card-header img {
